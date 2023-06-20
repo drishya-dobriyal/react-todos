@@ -1,44 +1,14 @@
-import React, { useState } from "react";
-
-function Todo({ todo, updateTitle, toggleTask, deleteTodo }) {
-  const [title, setTitle] = useState(todo.title || "");
-  const [editMode, setEditMode] = useState(false);
-
-  const handleTitleBlur = () => {
-    if (title.trim() !== "") {
-      updateTitle(todo.id, title);
-      setEditMode(false);
-      setTitle(todo.title);
-    }
-  };
-
-  const handleKeyPress = (event) => {
-    if (event.key === "Enter") {
-      handleTitleBlur();
-    }
-  };
-
+function Todo({ todo, toggleTask, deleteTodo }) {
   return (
     <li className="todo-item">
-      {editMode ? (
-        <input
-          className="todo-title"
-          onChange={(event) => setTitle(event.target.value)}
-          onBlur={handleTitleBlur}
-          onKeyPress={handleKeyPress}
-          defaultValue={title ?? ""}
-        />
-      ) : (
-        <div
-          className="todo-title"
-          style={{
-            textDecoration: todo.completed ? "line-through" : "none",
-          }}
-          onClick={() => setEditMode(true)}
-        >
-          {todo.title}
-        </div>
-      )}
+      <div
+        className="todo-title"
+        style={{
+          textDecoration: todo.completed ? "line-through" : "none",
+        }}
+      >
+        {todo.title}
+      </div>
 
       <input
         type="checkbox"
