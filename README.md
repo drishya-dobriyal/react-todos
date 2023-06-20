@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Todo List App 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple Todo List application built with React. It allows you to fetch and display todo items from a dummy API, add new items, update existing items, and delete items.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fetch and show todo items from the API: The application fetches todo items from the [JSONPlaceholder](https://jsonplaceholder.typicode.com/todos) API and displays them in a list.
 
-### `npm start`
+- Add a todo item: You can add a new todo item by entering the title in the input field and pressing the Enter key. The application will make a POST request to the API and save the new item in the React state.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Update an item: You can update the title of an existing todo item by clicking on it. This will activate the edit mode, allowing you to modify the title. Press Enter to save the changes. The application will make a PUT request to the API to update the item.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Delete an item: You can delete a todo item by clicking on the trash icon next to it. This will send a DELETE request to the API to remove the item from the list.
 
-### `npm test`
+Please note that the API requests for adding, updating, and deleting items are dummy calls and do not actually modify the server data. They are intended for demonstration purposes only.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Site: 
+"https://drishya-dobriyal.github.io/react-todos/"
 
-### `npm run build`
+## Installation and Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository: git clone https://github.com/your-username/todo-list-app.git
+2. Navigate to the project directory: cd react-todos
+3. Install the dependencies: npm install
+4. Start the development server: npm start
+5. Open your browser and visit http://localhost:3000 to see the Todo List application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
+1. React: JavaScript library for building user interfaces.
+2. react-toastify: Library for displaying toast notifications.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Acknowledgements
+1. The Todo List application is built using React, a powerful JavaScript library for building user interfaces.
+2. The JSONPlaceholder API is used as a dummy API for fetching, adding, updating, and deleting todo items.
+3. The react-toastify library is used for displaying error and success messages.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
