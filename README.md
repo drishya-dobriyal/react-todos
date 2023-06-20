@@ -1,4 +1,4 @@
-# Todo List App
+# Getting Started with Create React App
 
 This is a simple Todo List application built with React. It allows you to fetch and display todo items from a dummy API, add new items, update existing items, and delete items.
 
@@ -14,7 +14,8 @@ This is a simple Todo List application built with React. It allows you to fetch 
 
 Please note that the API requests for adding, updating, and deleting items are dummy calls and do not actually modify the server data. They are intended for demonstration purposes only.
 
-## Site: "https://drishya-dobriyal.github.io/react-todos/"
+## Site: 
+"https://drishya-dobriyal.github.io/react-todos/"
 
 ## Installation and Setup
 
@@ -25,12 +26,11 @@ Please note that the API requests for adding, updating, and deleting items are d
 5. Open your browser and visit http://localhost:3000 to see the Todo List application.
 
 ## Technologies Used
-
 1. React: JavaScript library for building user interfaces.
 2. react-toastify: Library for displaying toast notifications.
 
 ## Acknowledgements
-
 1. The Todo List application is built using React, a powerful JavaScript library for building user interfaces.
 2. The JSONPlaceholder API is used as a dummy API for fetching, adding, updating, and deleting todo items.
 3. The react-toastify library is used for displaying error and success messages.
+
